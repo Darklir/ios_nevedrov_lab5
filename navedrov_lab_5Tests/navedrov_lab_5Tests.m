@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "StudentService.h"
 
 @interface navedrov_lab_5Tests : XCTestCase
 
@@ -24,9 +25,33 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)test001_initWithMarks {
+    StudentService *servise = [[StudentService alloc] initWithMarks:@[@"4",@"5",@"2"]];
+    XCTAssertTrue(servise.marks.count == 3, @"Wrong object initialization ");
+}
+
+- (void)test002__isValidMarks {
+    StudentService *servise = [[StudentService alloc] initWithMarks:@[@"4",@"11",@"3",@"32",@"5"]];
+    StudentService *servise2 = [[StudentService alloc] initWithMarks:@[@"4",@"5",@"3",@"5",@"5"]];
+    StudentService *servise3 = [[StudentService alloc] initWithMarks:@[@"4",@"-2",@"2",@"5",@"2"]];
+    XCTAssertTrue(![servise isValidMarks], @"Wrong is valid marks method ");
+    XCTAssertTrue([servise2 isValidMarks], @"Wrong is valid marks method ");
+    XCTAssertTrue(![servise3 isValidMarks], @"Wrong is valid marks method ");
+}
+
+- (void)test003_isPermittedToSession {
+    StudentService *servise = [[StudentService alloc] initWithMarks:@[@"4",@"5",@"3",@"5",@"5"]];
+    StudentService *servise2 = [[StudentService alloc] initWithMarks:@[@"4",@"2",@"3",@"2"]];
+    XCTAssertTrue([servise isPermittedToSession], @"Wrong is permitted to session method ");
+    XCTAssertTrue(![servise2 isPermittedToSession], @"Wrong is permitted to session method ");
+
+}
+
+- (void)test004_isStipendia {
+    StudentService *servise = [[StudentService alloc] initWithMarks:@[@"4",@"4",@"4",@"5",@"5"]];
+    StudentService *servise2 = [[StudentService alloc] initWithMarks:@[@"4",@"2",@"3",@"2"]];
+    XCTAssertTrue([servise isStipendia], @"Wrong is stipendia method ");
+    XCTAssertTrue(![servise2 isStipendia], @"Wrong is stipendia method ");
 }
 
 - (void)testPerformanceExample {
