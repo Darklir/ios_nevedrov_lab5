@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84DEDF781BE022AE00791926 /* StudentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DEDF771BE022AE00791926 /* StudentService.m */; };
 		84E1C3E21BDFF275004639AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1C3E11BDFF275004639AB /* main.m */; };
 		84E1C3E51BDFF275004639AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1C3E41BDFF275004639AB /* AppDelegate.m */; };
 		84E1C3E81BDFF275004639AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1C3E71BDFF275004639AB /* ViewController.m */; };
@@ -15,7 +16,6 @@
 		84E1C3F01BDFF276004639AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E1C3EE1BDFF276004639AB /* LaunchScreen.storyboard */; };
 		84E1C3FB1BDFF276004639AB /* navedrov_lab_5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1C3FA1BDFF276004639AB /* navedrov_lab_5Tests.m */; };
 		84E1C4061BDFF277004639AB /* navedrov_lab_5UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1C4051BDFF277004639AB /* navedrov_lab_5UITests.m */; };
-		84E1C4151BDFF584004639AB /* StudentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1C4141BDFF584004639AB /* StudentService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84DEDF761BE022AD00791926 /* StudentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentService.h; sourceTree = "<group>"; };
+		84DEDF771BE022AE00791926 /* StudentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentService.m; sourceTree = "<group>"; };
 		84E1C3DD1BDFF275004639AB /* navedrov_lab_5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navedrov_lab_5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E1C3E11BDFF275004639AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84E1C3E31BDFF275004639AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,8 +54,6 @@
 		84E1C4011BDFF277004639AB /* navedrov_lab_5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = navedrov_lab_5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E1C4051BDFF277004639AB /* navedrov_lab_5UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = navedrov_lab_5UITests.m; sourceTree = "<group>"; };
 		84E1C4071BDFF277004639AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84E1C4131BDFF584004639AB /* StudentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentService.h; path = ../../../Downloads/StudentService.h; sourceTree = "<group>"; };
-		84E1C4141BDFF584004639AB /* StudentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentService.m; path = ../../../Downloads/StudentService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +104,8 @@
 		84E1C3DF1BDFF275004639AB /* navedrov_lab_5 */ = {
 			isa = PBXGroup;
 			children = (
-				84E1C4131BDFF584004639AB /* StudentService.h */,
-				84E1C4141BDFF584004639AB /* StudentService.m */,
+				84DEDF761BE022AD00791926 /* StudentService.h */,
+				84DEDF771BE022AE00791926 /* StudentService.m */,
 				84E1C3E31BDFF275004639AB /* AppDelegate.h */,
 				84E1C3E41BDFF275004639AB /* AppDelegate.m */,
 				84E1C3E61BDFF275004639AB /* ViewController.h */,
@@ -276,9 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E1C3E81BDFF275004639AB /* ViewController.m in Sources */,
+				84DEDF781BE022AE00791926 /* StudentService.m in Sources */,
 				84E1C3E51BDFF275004639AB /* AppDelegate.m in Sources */,
 				84E1C3E21BDFF275004639AB /* main.m in Sources */,
-				84E1C4151BDFF584004639AB /* StudentService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +504,7 @@
 				84E1C40C1BDFF277004639AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84E1C40D1BDFF277004639AB /* Build configuration list for PBXNativeTarget "navedrov_lab_5Tests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +513,7 @@
 				84E1C40F1BDFF277004639AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84E1C4101BDFF277004639AB /* Build configuration list for PBXNativeTarget "navedrov_lab_5UITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +522,7 @@
 				84E1C4121BDFF277004639AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
